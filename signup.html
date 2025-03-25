@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form action="/signup" method="post">
+        <h1>Sign Up</h1>
+    
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    
+        <!-- hCaptcha Widget -->
+        <div class="h-captcha" data-sitekey="05dc8378-f9fc-4a9e-ad36-3a72438c97c4"></div>
+    
+        <!-- Centered buttons container -->
+        <div class="button-container">
+            <button type="submit">Sign Up</button>
+        </div>
+    
+        <!-- Link to login page -->
+        <p>Already have an account? <a href="login.html">Log in here</a></p>
+    </form>
+    
+    <!-- Add the hCaptcha script at the bottom of your page -->
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>    
+    <script src="../js/auth.js"></script>
+</body>
+</html>
